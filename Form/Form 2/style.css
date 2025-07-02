@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #00aaff, #ff00cc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .form-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .input-group {
+    margin: 15px 0;
+    position: relative;
+  }
+  
+  label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: block;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #ff00cc;
+    box-shadow: 0 0 10px rgba(255, 0, 204, 0.8);
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .error {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+  }
+  
+  .submit-btn {
+    background-color: #ff00cc;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: bounceIn 1s ease-in-out;
+  }
+  
+  .submit-btn:hover {
+    background-color: #00aaff;
+    transform: scale(1.1);
+  }
+  
+  .submit-btn:focus {
+    outline: none;
+  }
+  
+  .success-message {
+    background-color: #28a745;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+
+  }
+  
