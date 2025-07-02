@@ -1,0 +1,365 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(/img/img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Baloo Bhai', cursiv;
+}
+
+.left {
+    margin: 0px;
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    left: 60px;
+    top: 20px;
+
+}
+
+.left img {
+    width: 130px;
+    /* filter: invert(100%); */
+
+}
+
+.left div {
+    text-align: center;
+    line-height: 19px;
+    font-size: 26px;
+}
+
+.mid {
+    /* border: 2px solid rgb(47, 255, 0); */
+    display: block;
+    width: 40%;
+    margin: 29px auto;
+
+}
+
+.right {
+    margin: 0px;
+    position: absolute;
+    right: 34px;
+    top: 37px;
+    /* border: 2px solid rgb(255, 230, 0); */
+    display: inline-block;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 17px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 8px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: grey;
+}
+
+.btn {
+    margin: 0px 9px;
+    color: white;
+    padding: 5px 14px;
+    background-color: black;
+    border: 2p solid grey;
+    outline: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.btn:hover {
+    background-color: rgb(19, 18, 18);
+}
+
+.container {
+    margin: 166px 180px;
+    border: 2px solid white;
+    padding: 75px;
+    width: 39%;
+    border-radius: 28px;
+}
+
+.form-group input {
+
+    text-align: center;
+    display: block;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container button {
+    display: block;
+    width: 74%;
+    margin: 20px auto;
+}
+
+@media screen and (max-width:1080px) {
+
+    .header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .mid {
+        position: absolute;
+        right: 365px;
+        top: 0px;
+    }
+
+    .navbar li a {
+        font-size: 15px;
+    }
+
+    .btn {
+        padding: 3px 10px;
+        font-size: 15px;
+    }
+
+    .container h1 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:967px) {
+    .navbar li a {
+        font-size: 13px;
+    }
+
+    .mid {
+        position: absolute;
+        right: 280px;
+        top: 0px;
+    }
+}
+
+@media screen and (max-width:881px) {
+    .container {
+        padding: 50px;
+        border: none;
+    }
+    
+    .form-group input {
+        text-align: center;
+        margin: 10px auto;
+        font-size: 20px;
+    }
+    
+    .container h1 {
+        font-size: 25px;
+    }
+    
+    .left {
+        margin: 0px;
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .right {
+        /* position: absolute; */
+        right: 5px;
+        top: 37px;
+    }
+    
+    .btn {
+        padding: 2px 6px;
+        font-size: 13px;
+    }
+    .container button {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+    }
+}
+@media screen and (max-width:739px) {
+    .container {
+        padding: 20px;
+        border: none;
+    }
+    .mid{
+        display: none;
+    }
+    .container h1 {
+        font-size: 20px;
+    }
+        .form-group input {
+            text-align: center;
+            margin: 10px auto;
+            font-size: 15px;
+    
+        }
+        .right {
+            /* position: absolute; */
+            right: 14px;
+            top: 37px;
+        }    
+}
+@media screen and (max-width:572px) {
+    .container h1 {
+        font-size: 15px;
+    }
+    .container {
+        margin: 166px 150px;
+        padding: 30px;
+        width: 39%;
+        border-radius: 28px;
+    }
+}
+@media screen and (max-width:542px) {
+    .container h1 {
+        font-size: 15px;
+    }
+    .container {
+        margin: 150px 130px;
+        padding: 30px;
+        width: 39%;
+        border-radius: 28px;
+    }
+}
+@media screen and (max-width:500px) {
+    .container h1 {
+        font-size: 15px;
+        position: relative;
+        left: 10px;
+    }
+    .container {
+        margin: 150px 130px;
+        padding: 30px;
+        width: 39%;
+        border-radius: 28px;
+    }
+    .container button{
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+      
+    }
+}
+@media screen and (max-width:430px) {
+    .container h1 {
+        font-size: 15px;
+        position: relative;
+        left: 27px;
+    }
+    .container {
+        margin: 120px 100px;
+        padding: 30px;
+        width: 39%;
+        border-radius: 28px;
+    }
+    .container button {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        margin-left: 70px;
+    }
+}
+@media screen and (max-width:486px) {
+    .container h1 {
+        left: 27px;
+        font-size: 15px;
+        
+    }
+    .container {
+        margin: 130px 100px;
+        padding: 30px;
+        width: 39%;
+        border-radius: 28px;
+    }
+}
+@media screen and (max-width:441px) {
+    .container h1 {
+        font-size: 15px;
+    left: 27px;
+    
+}
+    .container {
+        margin: 130px 80px;
+        padding: 30px;
+        width: 39%;
+        border-radius: 28px;
+    }
+}
+@media screen and (max-width:394px) {
+    .container h1 {
+        left: 27px;
+        font-size: 15px;
+        
+    }
+    .container {
+        margin: 130px 50px;
+        padding: 30px;
+        width: 39%;
+        border-radius: 28px;
+    }
+}
+@media screen and (max-width:363px) {
+    .container h1 {
+        font-size: 15px;
+        left: 43px;
+        
+    }
+    .right .btn{
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+    }
+    
+}
+@media screen and (max-width:350px) {
+    .container h1 {
+        left: 33px;
+        font-size: 15px;
+        
+    }
+    .container {
+        margin: 130px 40px;
+        padding: 30px;
+        width: 39%;
+        border-radius: 28px;
+    }
+    .form-group input {
+        text-align: center;
+        margin: 10px auto;
+        font-size: 13px;
+
+    }
+    
+}
+@media screen and (max-width:280px) {
+    .container h1 {
+        left: 39px;
+        font-size: 15px;
+        
+    }
+    .container {
+        margin: 130px 20px;
+        padding: 30px;
+        width: 39%;
+        border-radius: 28px;
+    }
+}
