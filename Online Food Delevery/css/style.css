@@ -1,0 +1,254 @@
+/* css reset */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* css variale */
+:root {
+    --navbar-height: 59px;
+}
+
+/* navigation bar/menu */
+#navbar {
+    display: flex;
+    align-items: center;
+
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/*navigation bar: logo and Images*/
+.logo {
+    margin: 13px 34px;
+
+}
+
+.logo img {
+    margin: 5px 6px;
+    height: 63px;
+}
+
+/*navigation bar: list stylinn  ol*/
+
+
+#navbar ul {
+    display: flex;
+    font-family: "Teko", sans-serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(22, 20, 20);
+    background-color: white;
+}
+
+/* section */
+/* home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 484px;
+}
+
+#home::before {
+    content: "";
+    background: url(/img/hitesh3.jpg.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: "Teko", sans-serif;
+}
+
+#home p {
+    font-family: "Teko", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Teko", sans-serif;
+}
+
+/* services section */
+#services {
+    margin: 25px;
+    display: flex;
+
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 6px 6px;
+    background-color: #dce0d9;
+    border-radius: 25px;
+}
+
+#services .box img {
+    /* border: 2px solid brown; */
+    height: 105px;
+
+    display: block;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+#services .box p {
+    font-family: "Teko", sans-serif;
+}
+
+/*Client Section  */
+#client-section {
+    height: 350px;
+    position: relative;
+}
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(/img/hi1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+#clients img{
+  height: 180px;
+}
+
+.client-item {
+    padding: 0px ;
+}
+
+/* contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../img/hi3.jpg) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+    
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: "Teko", sans-serif;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 9px 20px;
+}
+/* Utility vlasses */
+#h-primary {
+    font-size: 2.5rem;
+    padding: 19px;
+    font-family: "Teko", sans-serif;
+}
+
+.h-secondary {
+    font-size: 2.2rem;
+    padding: 19px;
+    text-align: center;
+    font-family: "Teko", sans-serif;
+}
+
+.headind {
+    font-size: 3.5rem;
+    padding: 0px 19px;
+    padding-top: 31px;
+    text-align: center;
+    font-family: "Teko", sans-serif;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: 2px solid white;
+    background-color: #ba7c7c;
+    color: white;
+    margin: 15px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.centar {
+    text-align: center;
+}
+.heading1{
+    font-size: 3.5rem;
+    padding: 0px 19px;
+    padding-top: 15px;
+    text-align: center;
+    font-family: "Teko", sans-serif; 
+}
+.headind2{
+    font-size: 3.5rem;
+    padding: 0px 19px;
+    padding-top: 15px;
+    text-align: center;
+    font-family: "Teko", sans-serif; 
+}
